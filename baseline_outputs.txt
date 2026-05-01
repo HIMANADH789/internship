@@ -1,0 +1,109 @@
+Cell 9:
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+
+
+Cell 11:
+Epoch 1: 100%|██████████| 2514/2514 [11:28<00:00,  3.65it/s]
+
+
+Cell 11:
+Epoch 1 | Loss 0.3827 | AUC 0.8537 | Time 11.53 min | ✅ Saved best model
+
+
+Cell 11:
+Epoch 2: 100%|██████████| 2514/2514 [11:39<00:00,  3.59it/s]
+
+
+Cell 11:
+Epoch 2 | Loss 0.3474 | AUC 0.8674 | Time 11.72 min | ✅ Saved best model
+
+
+Cell 11:
+Epoch 3: 100%|██████████| 2514/2514 [11:41<00:00,  3.59it/s]
+
+
+Cell 11:
+Epoch 3 | Loss 0.3208 | AUC 0.8428 | Time 11.75 min | Patience: 1/5
+
+
+Cell 11:
+Epoch 4: 100%|██████████| 2514/2514 [11:39<00:00,  3.60it/s]
+
+
+Cell 11:
+Epoch 4 | Loss 0.2798 | AUC 0.8453 | Time 11.71 min | Patience: 2/5
+
+
+Cell 11:
+Epoch 5: 100%|██████████| 2514/2514 [11:40<00:00,  3.59it/s]
+
+
+Cell 11:
+Epoch 5 | Loss 0.2194 | AUC 0.8066 | Time 11.74 min | Patience: 3/5
+
+
+Cell 11:
+Epoch 6: 100%|██████████| 2514/2514 [11:37<00:00,  3.61it/s]
+
+
+Cell 11:
+Epoch 6 | Loss 0.1547 | AUC 0.8089 | Time 11.68 min | Patience: 4/5
+
+
+Cell 11:
+Epoch 7: 100%|██████████| 2514/2514 [11:38<00:00,  3.60it/s]
+
+
+Cell 11:
+Epoch 7 | Loss 0.0983 | AUC 0.7811 | Time 11.71 min | Patience: 5/5
+⏹️ Early stopping
+Total training time: 82.00 min
+
+
+Cell 14:
+Final Test Macro AUC: 0.7828239308414423
+
+
+Cell 15:
+
+Per-class Test AUC:
+Atelectasis         : 0.6902
+Cardiomegaly        : 0.8272
+Consolidation       : 0.7014
+Edema               : 0.8297
+Pleural Effusion    : 0.8655
+
+
+Cell 15:
+/tmp/ipykernel_7312/1523597895.py:14: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x='Label', y='AUC', data=per_class_auc_df, palette='viridis')
+
+
+Cell 18:
+
+🧠 Test Prediction Stability (↓ better): 0.000014
+
+
+Cell 19:
+Test AUC: 0.7828239308414423
+
+
+Cell 20:
+
+Per-class Test AUC:
+Atelectasis         : 0.6902
+Cardiomegaly        : 0.8272
+Consolidation       : 0.7014
+Edema               : 0.8297
+Pleural Effusion    : 0.8655
+
+
+Cell 23:
+🧠 Test Prediction Stability (↓ better): 0.000014
+
+
+Cell 24:
+Train: 40214 Val: 234 Test: 22342

@@ -1,0 +1,6 @@
+Label,Baseline_AUC,Struct_Constrained_AUC
+Atelectasis,0.6902,0.5769
+Cardiomegaly,0.8272,0.6735
+Consolidation,0.7014,0.6227
+Edema,0.8297,0.73
+Pleural Effusion,0.8655,0.7068
